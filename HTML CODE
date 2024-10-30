@@ -2,43 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Stopwatch with Laps</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <h1 class="logo">Logo</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="container">
+        <div class="timer-display">
+            00 : 00 : 00 : 000
         </div>
-    </nav>
-
-    <section id="home">
-        <h2>Home Section</h2>
-        <p>Welcome to our website!</p>
-    </section>
-
-    <section id="about">
-        <h2>About Section</h2>
-        <p>About us details...</p>
-    </section>
-
-    <section id="services">
-        <h2>Services Section</h2>
-        <p>Details of services...</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Section</h2>
-        <p>Contact information...</p>
-    </section>
+        <div class="buttons">
+            <button id="start-timer">Start</button>
+            <button id="pause-timer">Pause</button>
+            <button id="reset-timer">Reset</button>
+            <button id="lap-timer">Lap</button>
+        </div>
+        <div class="lap-times" id="lap-times"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
